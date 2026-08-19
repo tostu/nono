@@ -11,6 +11,6 @@
   },
   "filesystem": {
     "allow": [],
-    "read": []
+    "read": ["/etc/gitconfig"]
   }
 }

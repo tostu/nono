@@ -1,0 +1,8 @@
+# ephemeral state, not meant for version control
+pack-update-hints.json
+
+# scratch space for profile drafts (machine-local, promoted out-of-band)
+profile-drafts/
+
+# temp staging area used during package install/extraction
+packages/.staging/
