@@ -1,0 +1,16 @@
+{
+  "extends": "nolabs-ai/claude",
+  "meta": {
+    "name": "claude"
+  },
+  "groups": {
+    "include": []
+  },
+  "workdir": {
+    "access": "readwrite"
+  },
+  "filesystem": {
+    "allow": [],
+    "read": []
+  }
+}

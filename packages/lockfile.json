@@ -1,0 +1,179 @@
+{
+  "lockfile_version": 4,
+  "registry": "https://registry.nono.sh",
+  "packages": {
+    "nolabs-ai/claude": {
+      "version": "0.1.0",
+      "installed_at": "2026-08-18T11:42:35.986247862+00:00",
+      "pinned": false,
+      "provenance": {
+        "signer_identity": "https://github.com/nolabs-ai/nono-packs/.github/workflows/publish-claude.yml@refs/tags/claude-v0.1.0",
+        "repository": "nolabs-ai/nono-packs",
+        "workflow": ".github/workflows/publish-claude.yml",
+        "ref": "refs/tags/claude-v0.1.0",
+        "rekor_log_index": 2115828386,
+        "signed_at": "2026-07-08T12:31:12.779685+00:00"
+      },
+      "artifacts": {
+        ".claude-plugin/plugin.json": {
+          "sha256": "dc5332c8b358a775615f8a6d10414dac021eb2eea69296945e8139df6984ebc7",
+          "type": "plugin"
+        },
+        "README.md": {
+          "sha256": "5eddcaee0b208e745c9b8f28b65e12e250aabc8442d1181c7c52d4561c3be3f4",
+          "type": "plugin"
+        },
+        "assets/logo.png": {
+          "sha256": "9ff4b5d64f5f83d49777978b31ce6399267652a6535c0f3663f8de00ad6b610f",
+          "type": "plugin"
+        },
+        "bin/nono-hook-bash.sh": {
+          "sha256": "d597255f07b7c6a5e0fb570e613e0f6f7dbb48b056cdba820c694f7380a3f4c6",
+          "type": "plugin"
+        },
+        "bin/nono-hook.sh": {
+          "sha256": "3ab9df72a06f01b6f5c0634a3aecfff616bcc15b2e60145544e0ebbd005596fe",
+          "type": "plugin"
+        },
+        "hooks/hooks.json": {
+          "sha256": "84d37efacf5cb27463b82ef2a63d3d81a5bddeb35ef4690f517442216bcae97c",
+          "type": "plugin"
+        },
+        "profiles/claude.json": {
+          "sha256": "ac4994af3b29a0ebe6fd23a642d656d1ce3c1ff2bdada5e720279a824666159d",
+          "type": "profile"
+        },
+        "skills/nono-sandbox/SKILL.md": {
+          "sha256": "65f9a04e4254d845ad54aad6de727dc53a6c2ff15652addacd9a81c33205b98c",
+          "type": "plugin"
+        },
+        "wiring/enabled-plugin.json": {
+          "sha256": "57b1d72c035ae031aa7c6fddd09ff5f9dc036ceb3f827d325e67857fd0770044",
+          "type": "plugin"
+        },
+        "wiring/installed-plugin.json": {
+          "sha256": "c433fe25d226d1603b6c32902a4db9f482f813bb80ea927562ee88ebb6f24b6c",
+          "type": "plugin"
+        },
+        "wiring/known-marketplaces.json": {
+          "sha256": "25b21d7f60e4ca2791133151740c993af8121d43c2eda52370ba9633989be3f1",
+          "type": "plugin"
+        },
+        "wiring/marketplace.json": {
+          "sha256": "e9b08a205bd3c3b14133c8b3e93e85178072423e8fac7c0642632ba43ea564b2",
+          "type": "plugin"
+        },
+        "wiring/profile-drafts-dir-marker": {
+          "sha256": "fe50ee3c940a94f77ed12dcfe268e87c2e4895ec8f631b66b24513d3bdefe4bb",
+          "type": "plugin"
+        }
+      },
+      "wiring_record": [
+        {
+          "type": "write_file",
+          "dest": "/home/torge/.config/nono/profile-drafts/.nono-claude-pack-marker",
+          "sha256": "fe50ee3c940a94f77ed12dcfe268e87c2e4895ec8f631b66b24513d3bdefe4bb"
+        },
+        {
+          "type": "symlink",
+          "link": "/home/torge/.claude/plugins/marketplaces/nolabs-ai/plugins/nono"
+        },
+        {
+          "type": "write_file",
+          "dest": "/home/torge/.claude/plugins/marketplaces/nolabs-ai/.claude-plugin/marketplace.json",
+          "sha256": "e9b08a205bd3c3b14133c8b3e93e85178072423e8fac7c0642632ba43ea564b2"
+        },
+        {
+          "type": "symlink",
+          "link": "/home/torge/.claude/plugins/cache/nolabs-ai/nono/1.0.0"
+        },
+        {
+          "type": "json_merge",
+          "file": "/home/torge/.claude/plugins/known_marketplaces.json",
+          "leaves": [
+            {
+              "path": [
+                "nolabs-ai",
+                "source",
+                "source"
+              ],
+              "installed_value": "directory"
+            },
+            {
+              "path": [
+                "nolabs-ai",
+                "source",
+                "path"
+              ],
+              "installed_value": "/home/torge/.claude/plugins/marketplaces/nolabs-ai"
+            },
+            {
+              "path": [
+                "nolabs-ai",
+                "installLocation"
+              ],
+              "installed_value": "/home/torge/.claude/plugins/marketplaces/nolabs-ai"
+            },
+            {
+              "path": [
+                "nolabs-ai",
+                "lastUpdated"
+              ],
+              "installed_value": "2026-08-18T11:42:35.985Z"
+            }
+          ],
+          "created_parents": [
+            [
+              "nolabs-ai"
+            ],
+            [
+              "nolabs-ai",
+              "source"
+            ]
+          ]
+        },
+        {
+          "type": "json_merge",
+          "file": "/home/torge/.claude/plugins/installed_plugins.json",
+          "leaves": [
+            {
+              "path": [
+                "version"
+              ],
+              "installed_value": 2,
+              "prior_value": 2
+            },
+            {
+              "path": [
+                "plugins",
+                "nono@nolabs-ai"
+              ],
+              "installed_value": [
+                {
+                  "scope": "user",
+                  "installPath": "/home/torge/.claude/plugins/cache/nolabs-ai/nono/1.0.0",
+                  "version": "1.0.0",
+                  "installedAt": "2026-08-18T11:42:35.985Z",
+                  "lastUpdated": "2026-08-18T11:42:35.985Z"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "json_merge",
+          "file": "/home/torge/.claude/settings.json",
+          "leaves": [
+            {
+              "path": [
+                "enabledPlugins",
+                "nono@nolabs-ai"
+              ],
+              "installed_value": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
